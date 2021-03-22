@@ -1,0 +1,65 @@
+.app-header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(191, 122, 255);
+    height: fit-content;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: black;
+}
+
+.list{
+    display: block;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 5px;
+}
+
+.user {
+    height: fit-content;
+    color: white;
+}
+
+.new-task{
+    display:flex;
+    align-items: center;
+    
+}
+.new-task input {
+    margin-right:5px;
+    padding:0;    
+    width: 200px;
+}
+
+#new-task-button{
+    border-radius: 100%;
+    border:0;
+    padding:0;
+    display: flex;
+}
+#new-task-button img {
+    height: 25px;
+    margin: 2px;
+}
+
+.to-do-division {
+    display: flex;
+    align-items: center;
+}
+
+.to-do-name {
+    width: 200px;
+    height: fit-content;
+    margin: 5px;
+}
+
+.to-do-name p{
+    height: 15px;
+}
+
+.delete-button img {
+    height: 20px;
+   
+}
