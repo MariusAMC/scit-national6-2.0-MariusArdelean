@@ -1,0 +1,17 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 20;
+  display: flex;
+}
+
+#gen-ship {
+    height: fit-content;
+    padding: 15px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border-radius: 50%;
+    outline: none;
+    font-weight: 800;
+}
