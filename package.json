@@ -1,0 +1,28 @@
+{
+  "name": "scit-national6-2.0-mariusardelean",
+  "version": "1.0.0",
+  "description": "scit proj",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariusAMC/scit-national6-2.0-MariusArdelean.git"
+  },
+  "author": "Marius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariusAMC/scit-national6-2.0-MariusArdelean/issues"
+  },
+  "homepage": "https://github.com/MariusAMC/scit-national6-2.0-MariusArdelean#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "save": "^2.4.0",
+    "webpack": "^5.31.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.6.0"
+  }
+}
