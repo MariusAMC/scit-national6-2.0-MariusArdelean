@@ -1,6 +1,7 @@
 import { imgArray } from "./renderFirstImg";
 
 export const breedImg = document.getElementById("breed-image");
+
 export const pgNum = document.getElementById("page-number");
 
 export function renderLastBreed(response) {
