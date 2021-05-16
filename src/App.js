@@ -3,7 +3,7 @@ import Intro from "./components/Intro/Intro";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
-
+import "./App.scss";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <TopBar />
       <div className="sections">
         <Intro />
-        <Portfolio/>
+        <Portfolio />
         <Work />
         <Contact />
       </div>

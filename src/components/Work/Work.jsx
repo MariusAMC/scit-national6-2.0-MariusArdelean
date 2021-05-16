@@ -1,5 +1,5 @@
-import "./Work.css";
+import "./Work.scss";
 
 export default function Work() {
-  return <div className="work">Work</div>;
+  return <div className="work"></div>;
 }
