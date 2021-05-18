@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 import "./Portfolio.scss";
 import PortfolioList from "./PortfolioList/PortfolioList";
+import {
+  featuredPortfolio,
+  webPortfolio,
+  mobilePortfolio,
+  designPortfolio,
+} from "../../data.js";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
 
   const list = [
     {
@@ -24,6 +31,25 @@ export default function Portfolio() {
     },
   ];
 
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+      case "web":
+        setData(webPortfolio);
+        break;
+      case "mobile":
+        setData(mobilePortfolio);
+        break;
+      case "design":
+        setData(designPortfolio);
+        break;
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
@@ -38,41 +64,12 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img
-            src="https://lh3.googleusercontent.com/proxy/PjFZN83ILpqbMrxpHtT8h2T70POlcIBRmViwPng2J8msZIyww6Jc2XmFMXxeYFAn73ARp557g_MGXv78cPIiYTrzQkdxmUC2paD8ik04wzgdMopOE6365064haAv"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://lh3.googleusercontent.com/proxy/PjFZN83ILpqbMrxpHtT8h2T70POlcIBRmViwPng2J8msZIyww6Jc2XmFMXxeYFAn73ARp557g_MGXv78cPIiYTrzQkdxmUC2paD8ik04wzgdMopOE6365064haAv"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://lh3.googleusercontent.com/proxy/PjFZN83ILpqbMrxpHtT8h2T70POlcIBRmViwPng2J8msZIyww6Jc2XmFMXxeYFAn73ARp557g_MGXv78cPIiYTrzQkdxmUC2paD8ik04wzgdMopOE6365064haAv"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://lh3.googleusercontent.com/proxy/PjFZN83ILpqbMrxpHtT8h2T70POlcIBRmViwPng2J8msZIyww6Jc2XmFMXxeYFAn73ARp557g_MGXv78cPIiYTrzQkdxmUC2paD8ik04wzgdMopOE6365064haAv"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img
-            src="https://lh3.googleusercontent.com/proxy/PjFZN83ILpqbMrxpHtT8h2T70POlcIBRmViwPng2J8msZIyww6Jc2XmFMXxeYFAn73ARp557g_MGXv78cPIiYTrzQkdxmUC2paD8ik04wzgdMopOE6365064haAv"
-            alt=""
-          />
-          <h3>Banking App</h3>
-        </div>
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="" />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
