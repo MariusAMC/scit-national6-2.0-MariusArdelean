@@ -1,0 +1,36 @@
+@import "../../global.scss";
+
+.about {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+
+  .about-text {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%;
+    flex-wrap: wrap;
+
+    h1 {
+      box-sizing: border-box;
+      display: block;
+      float: none;
+      line-height: normal;
+      position: static;
+
+      .me {
+        color: $accentColor;
+      }
+      .underline {
+        height: 6px;
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(77, 0, 128);
+      }
+    }
+  }
+}
