@@ -1,33 +1,55 @@
 import "./Work.scss";
 
 export default function Work() {
+  const data = [
+    {
+      id: "1",
+      icon: "./assets/mobile.png",
+      title: "Web Design",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+    },
+    {
+      id: "2",
+      icon: "./assets/globe.png",
+      title: "Mobile Application",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+    },
+    {
+      id: "3",
+      icon: "./assets/writing.png",
+      title: "Branding",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    },
+  ];
+
   return (
     <div className="work" id="work">
       <div className="slider">
-        <div className="container">
-          <div className="item">
-            <div className="left">
-              <div className="leftContainer">
-                <div className="imgContainer">
-                  <img src="assets/mobile.png" alt="" />
+        {data.map((d) => (
+          <div className="container">
+            <div className="item">
+              <div className="left">
+                <div className="leftContainer">
+                  <div className="imgContainer">
+                    <img src={d.icon} alt="" />
+                  </div>
+                  <h2>{d.title}</h2>
+                  <p>{d.desc}</p>
+                  <span>Projects</span>
                 </div>
-                <h2>Title</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nobis sint similique placeat quas itaque eligendi numquam,
-                  dolores
-                </p>
-                <span>Projects</span>
+              </div>
+              <div className="right">
+                <img
+                  src="https://t4.ftcdn.net/jpg/02/66/76/83/360_F_266768305_jxxjP3ivAYLHxbOejYQ4095SvaGfTjc3.jpg"
+                  alt=""
+                />
               </div>
             </div>
-            <div className="right">
-              <img
-                src="https://t4.ftcdn.net/jpg/02/66/76/83/360_F_266768305_jxxjP3ivAYLHxbOejYQ4095SvaGfTjc3.jpg"
-                alt=""
-              />
-            </div>
           </div>
-        </div>
+        ))}
       </div>
       <img src="assets/arrow.png" className="arrow left" alt="" />
       <img src="assets/arrow.png" className="arrow right" alt="" />
