@@ -1,22 +1,38 @@
 @import "../../global.scss";
 
 .about {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   display: flex;
-  justify-content: center;
 
-  .about-text {
+  .left {
+    flex: 0.5;
     display: flex;
-    position: relative;
-    justify-content: center;
+
+    .img {
+      padding-left: 5px;
+      overflow: hidden;
+      img {
+        height: 100vh;
+        background-color: black;
+        border-radius: 50%;
+        display: flex;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
     margin-top: 150px;
     width: 100%;
     flex-wrap: wrap;
+    overflow: hidden;
 
     h1 {
+      color: whitesmoke;
       box-sizing: border-box;
       display: block;
-      float: none;
       line-height: normal;
       position: static;
 
@@ -29,8 +45,50 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(77, 0, 128);
+        background-color: $accentColor;
       }
+    }
+
+    .text {
+      width: 50vh;
+      box-sizing: border-box;
+      p {
+        color: whitesmoke;
+        overflow: auto;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 28px;
+      }
+      span {
+        color: white;
+      }
+      .ityped-cursor {
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    .dld-button {
+      background-color: $accentColor;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      width: 175px;
+      height: 65px;
+      margin: 20px auto;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 3px 4px #757474;
     }
   }
 }
