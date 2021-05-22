@@ -1,37 +1,25 @@
 import "./Intro.scss";
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
 
 export default function Intro() {
-  const textRef = useRef();
-
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      backSpeed: 60,
-      strings: ["test", "testulet", "mai"],
-    });
-  }, []);
   return (
-    <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgContainer">
-          <img src="assets/me.jpg" alt="" />
+    <div className="intro" id="Intro">
+      <section className="section">
+        <video src="assets/smoke.mp4" autoPlay muted></video>
+        <div className="square">
+          <h1>
+            <span>W</span>
+            <span>E</span>
+            <span>L</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>E</span>
+          </h1>
         </div>
-      </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Hey there! I'm</h2>
-          <h1>Marius Ardelean</h1>
-          <h3>
-            Web <span ref={textRef}></span>
-          </h3>
-        </div>
-        <a href="#portfolio">
+        <a href="#about">
           <img src="assets/down.png" alt="" />
         </a>
-      </div>
+      </section>
     </div>
   );
 }

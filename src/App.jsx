@@ -1,3 +1,4 @@
+import Skills from "./components/Skills/Skills";
 import TopBar from "./components/TopBar/TopBar";
 import Intro from "./components/Intro/Intro";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -17,6 +18,7 @@ function App() {
       <div className="sections">
         <Intro />
         <About />
+        <Skills />
         <Portfolio />
         <Work />
         <Contact />

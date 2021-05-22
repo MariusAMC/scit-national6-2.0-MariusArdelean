@@ -1,91 +1,67 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: white;
-  display: flex;
+  background-image: linear-gradient(black, rgb(66, 66, 66));
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  .section {
+    height: 100vh;
+    background: #000;
 
-  @include mobile {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left {
-    flex: 0.5;
-    overflow: hidden;
-
-    .imgContainer {
-      width: 700px;
-      height: 700px;
-      background-color: black;
-      border-radius: 50%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      float: right;
-
-      @include mobile {
-        align-items: flex-start;
-      }
-
-      img {
-        height: 90%;
-
-        @include mobile {
-          height: 50%;
-        }
-      }
-    }
-  }
-  .right {
-    flex: 0.5;
-    position: relative;
-
-    .wrapper {
+    video {
+      object-fit: cover;
+      position: absolute;
+      // z-index: -1;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      height: 100vh;
+    }
 
-      @include mobile {
-        padding-left: 0;
-        align-items: center;
-      }
-
+    .square {
+      // height: calc(720px - 7px);
+      // width: 1280px;
+      object-fit: cover;
       h1 {
-        font-size: 60px;
-        margin: 10px 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        color: #ddd;
+        font-size: 5em;
+        letter-spacing: 0.8em;
 
-        @include mobile {
-          font-size: 40px;
-        }
-      }
-      h2 {
-        font-size: 35px;
-      }
-      h3 {
-        font-size: 30px;
-
-        @include mobile {
-          font-size: 40px;
-        }
         span {
-          font-size: inherit;
-          color: purple;
+          opacity: 0;
+          display: inline-block;
+          animation: animate 1s linear forwards;
         }
+      }
 
-        .ityped-cursor {
-          animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-          50% {
-            opacity: 1;
-          }
-          100% {
-            opacity: 0;
-          }
-        }
+      h1 span:nth-child(1) {
+        animation-delay: 1.7s;
+      }
+      h1 span:nth-child(2) {
+        animation-delay: 2.1s;
+      }
+      h1 span:nth-child(3) {
+        animation-delay: 2.6s;
+      }
+      h1 span:nth-child(4) {
+        animation-delay: 3s;
+      }
+      h1 span:nth-child(5) {
+        animation-delay: 3.5s;
+      }
+      h1 span:nth-child(6) {
+        animation-delay: 4s;
+      }
+      h1 span:nth-child(7) {
+        animation-delay: 4.2s;
       }
     }
 
@@ -95,6 +71,7 @@
       left: 40%;
 
       img {
+        color: white;
         width: 30px;
         animation: arrowBlink 2s infinite;
       }
@@ -103,6 +80,20 @@
         100% {
           opacity: 0;
         }
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
       }
     }
   }

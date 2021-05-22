@@ -1,0 +1,89 @@
+@import "../../global.scss";
+
+.skills {
+  background-image: linear-gradient(black, rgb(66, 66, 66));
+  color: lightcyan;
+
+  .container {
+    width: 100vh;
+    margin: 50px auto 0;
+    padding: 20px;
+    overflow: hidden;
+    ul {
+      overflow: visible;
+      li {
+        position: relative;
+        list-style: none;
+        margin: 50px 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        overflow: visible;
+      }
+
+      li:before {
+        content: "";
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background-color: rgb(154, 106, 231);
+        border-radius: 1000px;
+      }
+      li:after {
+        content: "";
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 0;
+        height: 15px;
+        background-color: $mainColor;
+        border-radius: 1000px;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+
+      li.html:after {
+        animation-name: html;
+      }
+      @keyframes html {
+        to {
+          width: 90%;
+        }
+      }
+      li.css:after {
+        animation-name: css;
+      }
+      @keyframes css {
+        to {
+          width: 77%;
+        }
+      }
+      li.js:after {
+        animation-name: js;
+      }
+      @keyframes js {
+        to {
+          width: 73%;
+        }
+      }
+      li.react:after {
+        animation-name: react;
+      }
+      @keyframes react {
+        to {
+          width: 68%;
+        }
+      }
+      li.git:after {
+        animation-name: git;
+      }
+      @keyframes git {
+        to {
+          width: 89%;
+        }
+      }
+    }
+  }
+}
