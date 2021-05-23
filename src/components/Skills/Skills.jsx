@@ -1,33 +1,32 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import "./Skills.scss";
+import Fade from "react-reveal/Fade";
 
 export default function Skills() {
-  useEffect(() => {
-    Aos.init({});
-  }, []);
-
   return (
     <div className="skills" id="Skills">
       <div className="container">
+        <Fade down>
+          <h1>
+            Base <span className="me">Skills</span>
+            <span className="underline"></span>
+          </h1>
+        </Fade>
         <ul>
-          <li data-aos="fade-up" className="html">
-            html
-            {/* <img src="assets/mobile.png" alt="" /> */}
-          </li>
-          <li data-aos="fade-up" className="css">
-            CSS img
-          </li>
-          <li data-aos="fade-up" className="js">
-            javaScript
-          </li>
-          <li data-aos="fade-up" className="react">
-            React
-          </li>
-          <li data-aos="fade-up" className="git">
-            GitHub
-          </li>
+          <Fade left>
+            <li className="html">html</li>
+          </Fade>
+          <Fade right>
+            <li className="css">css</li>
+          </Fade>
+          <Fade left>
+            <li className="js">js</li>
+          </Fade>
+          <Fade right>
+            <li className="react">react</li>
+          </Fade>
+          <Fade left>
+            <li className="git">git</li>
+          </Fade>
         </ul>
       </div>
     </div>

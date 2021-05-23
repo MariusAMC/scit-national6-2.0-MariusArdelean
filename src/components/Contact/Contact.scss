@@ -1,83 +1,143 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: rgba(14, 48, 86, 255);
-  display: flex;
+  background-image: linear-gradient(rgb(39, 39, 39), black);
 
-  @include mobile {
-    flex-direction: column;
-  }
-
-  .left {
-    flex: 0.7;
-
-    img {
-      height: 99%;
-      overflow: hidden;
-    }
-  }
-
-  .right {
-    flex: 0.3;
+  .title-only {
+    margin: 40px 40px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    h2 {
-      font-size: 30px;
+    h1 {
+      align-items: center;
+      color: whitesmoke;
+      box-sizing: border-box;
+      display: block;
+      line-height: normal;
+      position: static;
+      padding: 40px;
+      padding-bottom: 0;
+
+      .me {
+        color: $accentColor;
+      }
     }
+    .underline {
+      height: 6px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $accentColor;
+    }
+    .subtitle {
+      color: white;
+      padding: 15px;
+    }
+  }
 
-    form {
-      width: 70%;
-      height: 70%;
+  .sides {
+    display: flex;
+  }
+
+  .left {
+    flex: 0.4;
+
+    .container {
+      div {
+        text-align: start;
+
+        .info {
+          display: flex;
+          margin-bottom: 60px;
+
+          div {
+            .contact-title {
+              color: white;
+              font-size: 22px;
+              font-weight: 400;
+            }
+            .contact-subtitle {
+              font-size: 18px;
+              color: gray;
+            }
+          }
+
+          .phone-icon {
+            stroke: rgb(77, 14, 129);
+            font-size: 2rem;
+            color: $mainColor;
+            margin-left: 120px;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    flex: 0.6;
+    .contact-form-grid {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-
-      input {
-        width: 300px;
-        height: 30px;
-        font-size: 14px;
-        background-color: rgb(79, 138, 194);
-
-        @include mobile {
-          width: 200px;
-          height: 20px;
-        }
+      .contact-inputs {
+        width: 80%;
+        display: flex;
       }
+      .contact-content {
+        width: 80%;
+        background-color: transparent;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem 0.25rem;
 
-      textarea {
-        width: 300px;
-        height: 200px;
-        font-size: 14px;
-        background-color: rgb(79, 138, 194);
-
-        @include mobile {
-          width: 200px;
-          height: 100px;
+        .contact-label {
+          font-size: 16px;
+          font-weight: 700;
+          color: white;
         }
-      }
-
-      button {
-        width: 150px;
-        height: 30px;
-        color: whitesmoke;
-        background-color: crimson;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        cursor: pointer;
-
-        &.focus {
+        .input {
+          width: 100%;
+          background-color: rgb(63, 63, 63);
+          color: rgb(255, 255, 255);
+          font-size: 15px;
+          border-radius: 1000px;
+          border: none;
           outline: none;
+          padding: 0.25rem 0.5rem 0.5rem 0;
+          border: 5px solid transparent;
+        }
+        #text {
+          border-radius: 13px;
         }
       }
 
-      span {
-        color: greenyellow;
-        font-weight: 600;
+      .btn {
+        padding-right: 140px;
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background-color: $accentColor;
+          color: white;
+          font-size: 15px;
+          font-weight: 600;
+          vertical-align: middle;
+          border: none;
+          width: 175px;
+          height: 65px;
+          margin: 20px auto;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          cursor: pointer;
+          box-shadow: 0 3px 4px #ac73d1;
+
+          transition: 2s ease;
+        }
+        .button:hover {
+          border: $accentColor solid 2px;
+          background-color: black;
+        }
       }
     }
   }

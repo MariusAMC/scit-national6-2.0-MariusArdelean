@@ -11,6 +11,7 @@ import "./App.scss";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="app">
       <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />

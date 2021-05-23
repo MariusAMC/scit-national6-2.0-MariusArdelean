@@ -89,6 +89,12 @@
       -webkit-border-radius: 10px;
       cursor: pointer;
       box-shadow: 0 3px 4px #757474;
+
+      transition: 2s ease;
+    }
+    .dld-button:hover {
+      border: $accentColor solid 2px;
+      background-color: black;
     }
   }
 }
