@@ -2,7 +2,7 @@ import "./Intro.scss";
 
 export default function Intro() {
   return (
-    <div className="intro" id="Intro">
+    <div className="intro" id="intro">
       <section className="section">
         <video src="assets/smoke.mp4" autoPlay muted></video>
         <div className="square">

@@ -1,0 +1,58 @@
+@import "../../global.scss";
+
+.hobby {
+  background-image: linear-gradient(rgb(158, 158, 158), rgb(39, 39, 39));
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  .slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 12);
+
+      .slide {
+        height: 200px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+
+        .img {
+          // height: 250%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+}
