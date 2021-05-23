@@ -4,6 +4,7 @@
   background-image: linear-gradient(rgb(39, 39, 39), black);
 
   .title-only {
+    overflow: hidden;
     margin: 40px 40px;
     text-align: center;
     display: flex;
@@ -48,6 +49,7 @@
     .container {
       div {
         text-align: start;
+        overflow: hidden;
 
         .info {
           display: flex;
@@ -78,6 +80,7 @@
   .right {
     flex: 0.6;
     .contact-form-grid {
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       .contact-inputs {
