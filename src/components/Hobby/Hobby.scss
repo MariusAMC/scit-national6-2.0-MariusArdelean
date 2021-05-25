@@ -27,7 +27,7 @@
   }
 
   .slider {
-    height: 450px;
+    height: 500px;
     display: flex;
     position: absolute;
     left: 0;
@@ -48,7 +48,7 @@
       .item {
         width: 850px;
         height: 100%;
-        background-color: white;
+        background-color: transparent;
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -104,7 +104,7 @@
             }
 
             h2 {
-              font-size: 20px;
+              font-size: 30px;
 
               @include mobile {
                 font-size: 13px;
@@ -112,7 +112,7 @@
             }
 
             p {
-              font-size: 13px;
+              font-size: 14px;
 
               @include mobile {
                 display: none;
@@ -137,7 +137,7 @@
           overflow: hidden;
 
           img {
-            width: 400px;
+            width: 450px;
             transform: rotate(-10deg);
           }
         }

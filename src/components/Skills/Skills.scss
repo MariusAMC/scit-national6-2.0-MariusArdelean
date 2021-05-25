@@ -48,11 +48,64 @@
         overflow-x: visible;
         img {
           height: 40px;
+          opacity: 1;
         }
 
         @include mobile {
           margin: 30px 0;
           width: 300px;
+        }
+
+        img:hover {
+          transform: scale(1.8) rotate(360deg);
+          transition: all 0.5s ease-in-out 0s;
+          opacity: 1;
+        }
+        .html1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .html1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(327.6deg)
+            brightness(0.77);
+        }
+
+        .css1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .css1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(172.8deg)
+            brightness(0.58);
+        }
+
+        .js1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+          border-radius: 20%;
+        }
+        .js1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(61.2deg)
+            brightness(0.92);
+          border-radius: 20%;
+        }
+
+        .react1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .react1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(172.8deg)
+            brightness(0.92);
+        }
+
+        .git1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .git1:hover {
+          filter: invert(19%) sepia(36%) saturate(5831%) hue-rotate(262deg)
+            brightness(75%) contrast(133%);
         }
       }
 

@@ -14,27 +14,27 @@ export default function Skills() {
         <ul>
           <Fade left>
             <li className="html">
-              <img src="assets/html.png" alt="" />
+              <img className="html1" src="assets/html.svg" alt="" />
             </li>
           </Fade>
           <Fade right>
             <li className="css">
-              <img src="assets/css.png" alt="" />
+              <img className="css1" src="assets/css-3.svg" alt="" />
             </li>
           </Fade>
           <Fade left>
             <li className="js">
-              <img src="assets/js.png" alt="" />
+              <img className="js1" src="assets/js.svg" alt="" />
             </li>
           </Fade>
           <Fade right>
             <li className="react">
-              <img src="assets/react.png" alt="" />
+              <img className="react1" src="assets/atom.svg" alt="" />
             </li>
           </Fade>
           <Fade left>
             <li className="git">
-              <img src="assets/git.png" alt="" />
+              <img className="git1" src="assets/github.svg" alt="" />
             </li>
           </Fade>
         </ul>
