@@ -4,6 +4,11 @@
   background-image: linear-gradient(black, rgb(66, 66, 66));
   color: lightcyan;
 
+  @include mobile {
+    width: 768px;
+    height: auto;
+  }
+
   .container {
     width: 100vh;
     margin: 50px auto 0;
@@ -41,6 +46,11 @@
         font-weight: 500;
         text-transform: uppercase;
         overflow-x: visible;
+
+        @include mobile {
+          margin: 30px 0;
+          width: 300px;
+        }
       }
 
       li:before {

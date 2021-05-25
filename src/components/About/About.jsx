@@ -33,10 +33,12 @@ export default function About() {
         </Fade>
       </div>
       <div className="right">
-        <h1>
-          About <span className="me">Me</span>
-          <span className="underline"></span>
-        </h1>
+        <Fade down>
+          <h1>
+            About <span className="me">Me</span>
+            <span className="underline"></span>
+          </h1>
+        </Fade>
         <Fade right>
           <div className="text">
             <h3 className="hi">Hi! I'm Marius and I am a</h3>

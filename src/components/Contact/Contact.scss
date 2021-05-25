@@ -3,6 +3,11 @@
 .contact {
   background-image: linear-gradient(rgb(39, 39, 39), black);
 
+  @include mobile {
+    overflow: visible;
+    // height: auto;
+  }
+
   .title-only {
     overflow: hidden;
     margin: 40px 40px;
@@ -10,6 +15,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include mobile {
+      margin: 0 0;
+    }
 
     h1 {
       align-items: center;
@@ -41,6 +50,10 @@
 
   .sides {
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .left {
@@ -72,6 +85,10 @@
             font-size: 2rem;
             color: $mainColor;
             margin-left: 120px;
+
+            @include mobile {
+              margin: 8px;
+            }
           }
         }
       }
@@ -83,9 +100,17 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
+
+      @include mobile {
+        background: black;
+      }
       .contact-inputs {
         width: 80%;
         display: flex;
+
+        @include mobile {
+          flex-direction: column;
+        }
       }
       .contact-content {
         width: 80%;
