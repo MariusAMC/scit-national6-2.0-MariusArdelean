@@ -1,7 +1,9 @@
 @import "../src/global.scss";
 
 .app {
-  height: 100vh;
+  .all {
+    height: 100vh;
+  }
 
   .sections {
     width: 100%;
@@ -15,18 +17,11 @@
     &::-webkit-scrollbar {
       display: none; // rest of the browsers
     }
-    // @include mobile {
-    //   overflow: visible;
-    // }
 
     > * {
       width: 100vw;
       height: calc(100vh - 70px);
       scroll-snap-align: start;
-
-      // @include mobile {
-      //   height: auto;
-      // }
     }
   }
 }

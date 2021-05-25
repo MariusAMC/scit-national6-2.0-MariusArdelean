@@ -4,9 +4,10 @@ import Intro from "./components/Intro/Intro";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Hobby from "./components/Hobby/Hobby";
 import Contact from "./components/Contact/Contact";
-import { useState } from "react";
 import Menu from "./components/Menu/Menu";
 import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
+import { useState } from "react";
 import "./App.scss";
 
 function App() {
@@ -14,16 +15,19 @@ function App() {
 
   return (
     <div className="app">
-      <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
-        <Intro />
-        <About />
-        <Skills />
-        <Portfolio />
-        <Hobby />
-        <Contact />
+      <div className="all">
+        <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <div className="sections">
+          <Intro />
+          <About />
+          <Skills />
+          <Portfolio />
+          <Hobby />
+          <Contact />
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
