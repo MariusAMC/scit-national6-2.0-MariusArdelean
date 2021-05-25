@@ -2,7 +2,7 @@ import "./Hobby.scss";
 
 import { useState } from "react";
 
-export default function Work() {
+export default function Hobby() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const data = [
@@ -43,7 +43,7 @@ export default function Work() {
   };
 
   return (
-    <div className="work" id="work">
+    <div className="hobby" id="hobby">
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
