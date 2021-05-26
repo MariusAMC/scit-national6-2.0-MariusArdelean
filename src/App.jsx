@@ -15,19 +15,18 @@ function App() {
 
   return (
     <div className="app">
-      <div className="all">
-        <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <div className="sections">
-          <Intro />
-          <About />
-          <Skills />
-          <Portfolio />
-          <Hobby />
-          <Contact />
-        </div>
+      <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div className="sections">
+        <Intro />
+        <About />
+        <Skills />
+        <Portfolio />
+        <Hobby />
+        <Contact />
+
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
