@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  z-index: 2;
+  position: absolute;
 
   .section {
     height: 100vh;
@@ -89,7 +91,7 @@
 
     a {
       position: absolute;
-      bottom: 10px;
+      bottom: 100px;
       left: 50%;
       @include mobile {
         left: 80%;

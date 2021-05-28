@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Menu from "./components/Menu/Menu";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import BackToTop from "./components/BackToTop/BackToTop";
 import { useState } from "react";
 import "./App.scss";
 
@@ -27,6 +28,7 @@ function App() {
 
         <Footer />
       </div>
+      <BackToTop />
     </div>
   );
 }
