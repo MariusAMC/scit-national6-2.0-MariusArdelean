@@ -1,0 +1,29 @@
+@import "../../../global.scss";
+.btn {
+  padding-right: 140px;
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $accentColor;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    vertical-align: middle;
+    border: none;
+    width: 175px;
+    height: 65px;
+    margin: 20px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 4px #ac73d1;
+
+    transition: 2s ease;
+  }
+  .button:hover {
+    border: $accentColor solid 2px;
+    background-color: black;
+  }
+}

@@ -1,10 +1,10 @@
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-import SendIcon from "@material-ui/icons/Send";
 import Rotate from "react-reveal/Rotate";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
+import Form from "./Form/Form";
 import "./Contact.scss";
 
 export default function Contact() {
@@ -62,48 +62,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="right">
-          <form action="" className="contact-form-grid">
-            <div className="contact-inputs">
-              <Fade right>
-                <div className="contact-content">
-                  <label htmlFor="" className="contact-label">
-                    Name
-                  </label>
-                  <input type="text" className="input" />
-                </div>
-              </Fade>
-              <Fade right>
-                <div className="contact-content">
-                  <label htmlFor="" className="contact-label">
-                    Email
-                  </label>
-                  <input type="email" className="input" />
-                </div>
-              </Fade>
-            </div>
-            <Fade right>
-              <div className="contact-content">
-                <label htmlFor="" className="contact-label">
-                  Message
-                </label>
-                <textarea
-                  name=""
-                  id="text"
-                  cols="0"
-                  rows="7"
-                  className="input"
-                ></textarea>
-              </div>
-            </Fade>
-            <Fade up>
-              <div className="btn">
-                <button className="button">
-                  <span>Send Message</span>
-                  <SendIcon />
-                </button>
-              </div>
-            </Fade>
-          </form>
+          <Form />
         </div>
       </div>
     </div>
