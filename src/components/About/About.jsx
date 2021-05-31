@@ -55,7 +55,16 @@ export default function About() {
           </div>
         </Fade>
         <Flash>
-          <button className="dld-button">Download CV</button>
+          <button className="dld-button">
+            <a
+              href="assets/MariusArdelean.docx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Download CV
+            </a>{" "}
+          </button>
         </Flash>
       </div>
     </div>

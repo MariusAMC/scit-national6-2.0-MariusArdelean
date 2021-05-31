@@ -2,12 +2,47 @@
 
 .hobby {
   background-image: linear-gradient(rgb(158, 158, 158), rgb(39, 39, 39));
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 100vh;
 
+  .title-only {
+    overflow: hidden;
+    margin: 40px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+      margin: 0 0;
+    }
+
+    h1 {
+      align-items: center;
+      color: whitesmoke;
+      box-sizing: border-box;
+      display: block;
+      line-height: normal;
+      position: static;
+      padding: 40px;
+      padding-bottom: 0;
+
+      .me {
+        color: $accentColor;
+      }
+    }
+    .underline {
+      height: 6px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $accentColor;
+    }
+  }
   .arrow {
     height: 50px;
     position: absolute;

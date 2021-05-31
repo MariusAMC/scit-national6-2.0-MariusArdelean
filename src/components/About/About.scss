@@ -130,6 +130,10 @@
       box-shadow: 0 3px 4px #757474;
 
       transition: 2s ease;
+      a {
+        color: wheat;
+        text-decoration: none;
+      }
     }
     .dld-button:hover {
       border: $accentColor solid 2px;

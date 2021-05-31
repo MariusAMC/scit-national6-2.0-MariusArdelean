@@ -7,6 +7,8 @@ import {
   mobilePortfolio,
   designPortfolio,
 } from "../../data.js";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -52,7 +54,16 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <div className="title-only">
+        <Fade down>
+          <h1>
+            My <span className="me">Portfolio</span>
+          </h1>
+        </Fade>
+        <Slide left>
+          <span className="underline"></span>
+        </Slide>
+      </div>
       <ul>
         {list.map((item) => (
           <PortfolioList

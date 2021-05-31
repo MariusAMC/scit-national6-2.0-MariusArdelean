@@ -1,6 +1,7 @@
 import "./Hobby.scss";
 import { useState } from "react";
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
 export default function Hobby() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -46,6 +47,17 @@ export default function Hobby() {
 
   return (
     <div className="hobby" id="hobby">
+      <div className="title-only">
+        <Fade down>
+          <h1>
+            My <span className="me">Hobbies</span>
+          </h1>
+        </Fade>
+        <Slide left>
+          <span className="underline"></span>
+        </Slide>
+      </div>
+
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
