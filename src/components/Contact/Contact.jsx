@@ -4,8 +4,9 @@ import LocationOnIcon from "@material-ui/icons/LocationOn";
 import Rotate from "react-reveal/Rotate";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
-import Form from "./Form/Form";
+import "react-toastify/dist/ReactToastify.css";
 import "./Contact.scss";
+import Form from "./Form/Form";
 
 export default function Contact() {
   return (
