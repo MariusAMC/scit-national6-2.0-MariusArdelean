@@ -37,7 +37,13 @@ export default function Menu({ menuOpen, setMenuOpen }) {
               <FaFacebook />
             </i>
           </div>
-          <span>Facebook</span>
+          <a
+            href="https://www.facebook.com/ardelean.marius08"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Facebook
+          </a>
         </div>
         <div class="button">
           <div class="icon">
@@ -45,7 +51,13 @@ export default function Menu({ menuOpen, setMenuOpen }) {
               <FaInstagram />
             </i>
           </div>
-          <span>Instagram</span>
+          <a
+            href="https://www.instagram.com/marius20amc/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>
         </div>
         <div class="button">
           <div class="icon">
@@ -53,7 +65,13 @@ export default function Menu({ menuOpen, setMenuOpen }) {
               <FaGithub />
             </i>
           </div>
-          <span>Github</span>
+          <a
+            href="https://github.com/MariusAMC/scit-national6-2.0-MariusArdelean"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
         </div>
         <div class="button">
           <div class="icon">
@@ -61,7 +79,13 @@ export default function Menu({ menuOpen, setMenuOpen }) {
               <FaLinkedinIn />
             </i>
           </div>
-          <span>LikedIn</span>
+          <a
+            href="https://www.linkedin.com/in/marius-ardelean-0133621bb/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
     </div>

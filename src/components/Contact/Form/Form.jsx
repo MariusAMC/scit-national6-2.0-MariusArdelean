@@ -1,7 +1,8 @@
 import { Component } from "react";
 import { FormField } from "../FormField/FormField";
-import { FormMessage } from "../FormMessage/FormMessage";
+import FormMessage from "../FormMessage/FormMessage";
 import { SendButton } from "../SendButton/SendButton";
+// import emailjs from "emailjs-com";
 import Fade from "react-reveal/Fade";
 
 import "./Form.scss";
@@ -47,16 +48,23 @@ export default class Form extends Component {
 
   render() {
     return (
-      <div className="form">
+      <form
+        className="form"
+        // onSubmit={sendEmail}
+      >
         <div className="contact-inputs">
           <Fade right>
             <FormField
+              type="text"
+              name="name"
               label="Name"
               isInvalid={this.isFieldInvalid(this.state.firstName)}
               onChange={(value) => this.setFieldValue("firstName", value)}
             />
 
             <FormField
+              type="email"
+              name="email"
               label="Email"
               isInvalid={this.isFieldInvalid(this.state.email)}
               onChange={(value) => this.setFieldValue("email", value)}
@@ -66,6 +74,7 @@ export default class Form extends Component {
         <div className="text">
           <Fade right>
             <FormField
+              name="message"
               label="Message"
               isTextarea
               isInvalid={this.isFieldInvalid(this.state.message)}
@@ -73,13 +82,13 @@ export default class Form extends Component {
             />
           </Fade>
           <Fade up>
-            <SendButton onClick={this.handleOnSend} />
+            <SendButton type="submit" value="Send" />
           </Fade>
           {this.state.showMessage ? (
             <FormMessage onClose={this.handleCloseMessage} />
           ) : null}
         </div>
-      </div>
+      </form>
     );
   }
 }
