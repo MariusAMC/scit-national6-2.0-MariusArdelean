@@ -56,11 +56,7 @@ export default function About() {
         </Fade>
         <Flash>
           <button className="dld-button">
-            <a
-              href="assets/MariusArdelean.docx"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">
               {" "}
               Download CV
             </a>{" "}
