@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/scit-national6-2.0-MariusArdelean/static/css/main.75d3d14c.chunk.css",
+    "main.js": "/scit-national6-2.0-MariusArdelean/static/js/main.88638de5.chunk.js",
+    "main.js.map": "/scit-national6-2.0-MariusArdelean/static/js/main.88638de5.chunk.js.map",
+    "runtime-main.js": "/scit-national6-2.0-MariusArdelean/static/js/runtime-main.b8a820f6.js",
+    "runtime-main.js.map": "/scit-national6-2.0-MariusArdelean/static/js/runtime-main.b8a820f6.js.map",
+    "static/css/2.97503911.chunk.css": "/scit-national6-2.0-MariusArdelean/static/css/2.97503911.chunk.css",
+    "static/js/2.3535e80c.chunk.js": "/scit-national6-2.0-MariusArdelean/static/js/2.3535e80c.chunk.js",
+    "static/js/2.3535e80c.chunk.js.map": "/scit-national6-2.0-MariusArdelean/static/js/2.3535e80c.chunk.js.map",
+    "index.html": "/scit-national6-2.0-MariusArdelean/index.html",
+    "static/css/2.97503911.chunk.css.map": "/scit-national6-2.0-MariusArdelean/static/css/2.97503911.chunk.css.map",
+    "static/css/main.75d3d14c.chunk.css.map": "/scit-national6-2.0-MariusArdelean/static/css/main.75d3d14c.chunk.css.map",
+    "static/js/2.3535e80c.chunk.js.LICENSE.txt": "/scit-national6-2.0-MariusArdelean/static/js/2.3535e80c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8a820f6.js",
+    "static/css/2.97503911.chunk.css",
+    "static/js/2.3535e80c.chunk.js",
+    "static/css/main.75d3d14c.chunk.css",
+    "static/js/main.88638de5.chunk.js"
+  ]
+}
