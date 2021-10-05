@@ -26,11 +26,11 @@ export default function About() {
   return (
     <div className="about" id="about">
       <div className="left">
-        <Fade left>
-          <div className="img">
-            <img src="/assets/me.jpg" alt="" />
-          </div>
-        </Fade>
+        {/* <Fade left> */}
+        <div className="img">
+          <img src="/assets/me.jpg" alt="" />
+        </div>
+        {/* </Fade> */}
       </div>
       <div className="right">
         <Fade down>
