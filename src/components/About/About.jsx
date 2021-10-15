@@ -28,7 +28,7 @@ export default function About() {
       <div className="left">
         {/* <Fade left> */}
         <div className="img">
-          <img src="/assets/me.jpg" alt="" />
+          <img src="public/assets/me.jpg" alt="" />
         </div>
         {/* </Fade> */}
       </div>
