@@ -1,0 +1,179 @@
+@import "../../global.scss";
+
+.skills {
+  background-image: linear-gradient(black, rgb(66, 66, 66));
+  color: lightcyan;
+
+  @include mobile {
+    width: 768px;
+    height: auto;
+  }
+
+  .container {
+    width: 100vh;
+    margin: 50px auto 0;
+    padding: 20px;
+    // overflow-x: visible;
+
+    h1 {
+      align-items: center;
+      color: whitesmoke;
+      box-sizing: border-box;
+      display: block;
+      line-height: normal;
+      position: static;
+      padding: 40px;
+
+      .me {
+        color: $accentColor;
+      }
+      .underline {
+        height: 6px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $accentColor;
+      }
+    }
+
+    ul {
+      // overflow-x: visible;
+      li {
+        position: relative;
+        list-style: none;
+        margin: 30px 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        overflow-x: visible;
+        img {
+          height: 40px;
+          opacity: 1;
+        }
+
+        @include mobile {
+          margin: 30px 0;
+          width: 300px;
+        }
+
+        img:hover {
+          transform: scale(1.8) rotate(360deg);
+          transition: all 0.5s ease-in-out 0s;
+          opacity: 1;
+        }
+        .html1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .html1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(327.6deg)
+            brightness(0.77);
+        }
+
+        .css1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .css1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(172.8deg)
+            brightness(0.58);
+        }
+
+        .js1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+          border-radius: 20%;
+        }
+        .js1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(61.2deg)
+            brightness(0.92);
+          border-radius: 20%;
+        }
+
+        .react1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .react1:hover {
+          filter: invert(0.4) sepia(1) saturate(20) hue-rotate(172.8deg)
+            brightness(0.92);
+        }
+
+        .git1 {
+          filter: invert(1) sepia(0) saturate(1) hue-rotate(0deg)
+            brightness(1.2);
+        }
+        .git1:hover {
+          filter: invert(19%) sepia(36%) saturate(5831%) hue-rotate(262deg)
+            brightness(75%) contrast(133%);
+        }
+      }
+
+      li:before {
+        content: "";
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background-color: rgb(152, 83, 216);
+        border-radius: 1000px;
+      }
+      li:after {
+        content: "";
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 0;
+        height: 15px;
+        background-color: $mainColor;
+        border-radius: 1000px;
+        animation-delay: 2s;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+      }
+
+      li.html:after {
+        animation-name: html;
+      }
+      @keyframes html {
+        to {
+          width: 90%;
+        }
+      }
+      li.css:after {
+        animation-name: css;
+      }
+      @keyframes css {
+        to {
+          width: 77%;
+        }
+      }
+      li.js:after {
+        animation-name: js;
+      }
+      @keyframes js {
+        to {
+          width: 73%;
+        }
+      }
+      li.react:after {
+        animation-name: react;
+      }
+      @keyframes react {
+        to {
+          width: 68%;
+        }
+      }
+      li.git:after {
+        animation-name: git;
+      }
+      @keyframes git {
+        to {
+          width: 89%;
+        }
+      }
+    }
+  }
+}

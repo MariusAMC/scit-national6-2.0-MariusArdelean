@@ -1,0 +1,127 @@
+@import "../../global.scss";
+
+.intro {
+  background-image: linear-gradient(black, rgb(66, 66, 66));
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 2;
+  position: sticky;
+
+  .section {
+    height: 100vh;
+    background: #000;
+
+    video {
+      object-fit: cover;
+      position: absolute;
+      // z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+
+      @include mobile {
+        position: absolute;
+        transform: rotate(90deg);
+
+        transform-origin: bottom left;
+        width: 100vh;
+        height: 100vw;
+        margin-top: -100vw;
+        object-fit: cover;
+
+        visibility: visible;
+      }
+    }
+
+    .square {
+      // height: calc(720px - 7px);
+      // width: 1280px;
+      object-fit: cover;
+      h1 {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        color: #ddd;
+        font-size: 5em;
+        letter-spacing: 0.8em;
+
+        @include mobile {
+          letter-spacing: 0px;
+          display: flex;
+          flex-direction: column;
+          font-size: 35px;
+          justify-content: center;
+        }
+
+        span {
+          opacity: 0;
+          display: inline-block;
+          animation: animate 1s linear forwards;
+        }
+      }
+
+      h1 span:nth-child(1) {
+        animation-delay: 1.7s;
+      }
+      h1 span:nth-child(2) {
+        animation-delay: 2.1s;
+      }
+      h1 span:nth-child(3) {
+        animation-delay: 2.6s;
+      }
+      h1 span:nth-child(4) {
+        animation-delay: 3s;
+      }
+      h1 span:nth-child(5) {
+        animation-delay: 3.5s;
+      }
+      h1 span:nth-child(6) {
+        animation-delay: 4s;
+      }
+      h1 span:nth-child(7) {
+        animation-delay: 4.2s;
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      @include mobile {
+        left: 80%;
+      }
+
+      img {
+        color: white;
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+      }
+    }
+  }
+}

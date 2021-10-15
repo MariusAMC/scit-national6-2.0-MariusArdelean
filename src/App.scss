@@ -1,0 +1,29 @@
+@import "../src/global.scss";
+
+.app {
+  height: 100vh;
+  overflow: auto;
+}
+
+.sections {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  top: 70px;
+  scroll-behavior: smooth; //smooth scrolling
+  // scroll-snap-type: y mandatory;
+  scrollbar-width: none; //firefox
+  &::-webkit-scrollbar {
+    display: none; // rest of the browsers
+  }
+
+  > * {
+    width: 100vw;
+    // height: calc(100vh - 70px);
+    scroll-snap-align: start;
+  }
+  // > *:not(:last-child) {
+  //   height: calc(100vh - 70px);
+  // }
+}

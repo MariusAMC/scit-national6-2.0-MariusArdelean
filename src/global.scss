@@ -1,0 +1,9 @@
+$mainColor: #15023a;
+$accentColor: rgb(88, 12, 150);
+
+$width: 768px;
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
