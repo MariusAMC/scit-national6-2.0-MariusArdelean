@@ -28,7 +28,7 @@ export default function About() {
       <div className="left">
         {/* <Fade left> */}
         <div className="img">
-          <img src="public/assets/me.jpg" alt="" />
+          <img src={process.env.PUBLIC_URL + "/assets/me.jpg"} />
         </div>
         {/* </Fade> */}
       </div>
